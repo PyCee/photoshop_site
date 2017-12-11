@@ -1,0 +1,11 @@
+function check_for_html_errors () {
+    
+	if(document.getElementById("content").width !=
+	document.getElementById("content").height){
+	console.log("ERROR::content width != height. Resize content.");
+	}
+	if(document.getElementById("content").width !=
+	document.getElementById("content").height){
+	console.log("ERROR::content width != height. Resize content.");
+	}
+}

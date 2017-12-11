@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>photos</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <!--link rel="icon" href="images/icon.png" type="image/x-icon"-->
+  </head>
+  <body>
+    
+    <main>
+      <div id="thumbnails">
+	<hr>
+	<div id="color">Color<br></div>
+	<hr>
+	<div id="merger">Merger<br></div>
+	<hr>
+	<div id="restoration">Restoration<br></div>
+	<hr>
+	<div id="collage">Collage<br></div>
+	<hr>
+      </div>
+      <div id="content">
+	<div id="content_title">default_title</div>
+	<hr>
+	<div id="content_image"></div>
+      </div>
+      
+      <script src="html_warnings.js"></script>
+      <script src="content.js"></script>
+      <script src="thumbnail.js"></script>
+      <script src="storage.js"></script>
+    
+      <script>
+	display_html_warnings();
+
+	new Storage("images/spotColor.jpg", "color", "Spot Color");
+	new Storage("images/selectiveColorization.jpg", "color", "Selective Colorization");
+	
+	<!--new Storage("images/.jpg", "", "");-->
+	new Storage("images/merger.jpg", "merger", "Merger");
+	new Storage("images/restoration.jpg", "restoration", "Pre-restoration");
+	new Storage("images/restoration.jpg", "restoration", "Restoration");
+
+	storage_array[0].select_storage();
+      </script>
+    </main>
+  </body>
+</html>

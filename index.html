@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Portfolio</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <!--link rel="icon" href="images/icon.png" type="image/x-icon"-->
+  </head>
+  <body>
+    <h3>Portfolio by Kim Pampusch</h3>
+    <main>
+      <div id="thumbnails">
+	Click on the thumbnails
+	<hr>
+	<div id="ph1">Photoshop 1<br></div>
+	</hr>
+	<div id="ph2">Photoshop 2<br></div>
+	<hr>
+      </div>
+      <div id="content">
+	<div id="content_title">default_title</div>
+	<hr>
+	<div id="content_image"></div>
+      </div>
+      <div id="video">
+	<video width="500" height="420" controls>
+	  <source src="videos/butterfly.mp4" type="video/mp4">
+	</video>
+	<hr>
+	<div id="content_title">Butterfly Video</div>
+      </div>
+      
+      <script src="html_warnings.js"></script>
+      <script src="content.js"></script>
+      <script src="thumbnail.js"></script>
+      <script src="storage.js"></script>
+    
+      <script>
+	display_html_warnings();
+
+	new Storage("images/spotColor.jpg", "ph1", "Spot Color");
+	new Storage("images/selectiveColorization.jpg", "ph1", "Selective Colorization");
+	new Storage("images/red_bike.jpg", "ph1", "Red Bike");
+	new Storage("images/duck.jpg", "ph1", "Duck");
+	new Storage("images/train_perspective.jpg", "ph1", "Perspective Train");
+	new Storage("images/wine_glass.jpg", "ph1", "Wine Glass");
+	new Storage("images/panorama.jpg", "ph1", "Panorama");
+	new Storage("images/red_eye_and_liquify.jpg", "ph1",
+	"Red Eye and Liquify");
+	new Storage("images/columns_straightened.jpg", "ph1",
+	"Straight Pillars");
+	new Storage("images/egret_blur.jpg", "ph1",
+	"Blurred Egret");
+	
+	new Storage("images/merger.jpg", "ph1", "Merger");
+	new Storage("images/collage.jpg", "ph1", "Collage");
+	new Storage("images/hawaii.jpg", "ph1", "Hawaii Postcard");
+	new Storage("images/shells.jpg", "ph1", "Shells");
+	new Storage("images/magazine_cover.jpg", "ph1", "Magazine Cover");
+	new Storage("images/jerik.jpg", "ph1", "Face Swap");
+	new Storage("images/photo_correction.jpg", "ph1", "Photo Correction");
+	new Storage("images/restoration.jpg", "ph1", "Restoration");
+	
+	new Storage("images/dreamscape.jpg", "ph2", "Dreamscape");
+	new Storage("images/frecklez_vector.jpg", "ph2", "Vector Face");
+	new Storage("images/lesson10landscape.jpg", "ph2", "Painted Landscape");
+
+	storage_array[0].select_storage();
+      </script>
+    </main>
+  </body>
+</html>

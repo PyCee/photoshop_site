@@ -1,0 +1,17 @@
+var contents = new Array();
+var thumbnails = new Array();
+
+var storages = new Array();
+
+
+function add_image(img_src, parent_id, title){
+    
+    var stor = new Storage(img_src, parent_id, title);
+    storages.push(stor);
+    
+    //var con = new Content(img_src, title);
+    //contents.push(con);
+    //var nail = new Thumbnail(img_src, parent_id, title);
+    //thumbnails.push(nail);
+    //nail.element.onclick = function(){hide_all_content();con.show();};
+}
